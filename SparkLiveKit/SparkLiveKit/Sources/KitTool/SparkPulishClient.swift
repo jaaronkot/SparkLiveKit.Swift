@@ -207,7 +207,7 @@ extension SparkPulishClient: RtmpMuxerDelegate {
 extension SparkPulishClient {
     private func listenOrientationDidChangeNotification() {
         let center: NSNotificationCenter = NSNotificationCenter.defaultCenter()
-        center.addObserver(self, selector: #selector(BVCPulishClient.onOrientationChanged(_:)), name: UIDeviceOrientationDidChangeNotification, object: nil)
+        center.addObserver(self, selector: #selector(SparkPulishClient.onOrientationChanged(_:)), name: UIDeviceOrientationDidChangeNotification, object: nil)
     }
     
     @objc private func onOrientationChanged(notification: NSNotification) {
